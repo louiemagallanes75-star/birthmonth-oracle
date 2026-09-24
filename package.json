@@ -1,0 +1,23 @@
+{
+  "name": "birthmonth-oracle",
+  "version": "1.0.0",
+  "description": "BirthMonth Oracle - a local AI birth month interpretation app powered by QVAC",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test:qvac": "node test-qvac.js",
+    "oracle": "node cli.js"
+  },
+  "keywords": [
+    "qvac",
+    "local-ai",
+    "birth-month",
+    "oracle"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@qvac/sdk": "^0.20.0"
+  }
+}

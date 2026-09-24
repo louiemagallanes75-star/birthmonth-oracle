@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BirthMonth Oracle</title>
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <div class="stars"></div>
+
+  <main class="app">
+
+    <header class="topbar">
+
+      <div class="brand">
+
+        <div class="brand-symbol">✦</div>
+
+        <div>
+          <div class="brand-name">
+            BirthMonth Oracle
+          </div>
+
+          <div class="brand-subtitle">
+            LOCAL AI REFLECTION
+          </div>
+        </div>
+
+      </div>
+
+      <div class="privacy-badge">
+        <span class="privacy-dot"></span>
+        Runs locally
+      </div>
+
+    </header>
+
+
+    <section class="hero">
+
+      <div class="hero-orbit">
+
+        <div class="orbit-ring ring-one"></div>
+
+        <div class="orbit-ring ring-two"></div>
+
+        <div class="moon">
+          ☾
+        </div>
+
+      </div>
+
+
+      <div class="hero-eyebrow">
+        ✦ A MOMENT FOR REFLECTION ✦
+      </div>
+
+
+      <h1>
+        Your month.
+        <span>Your reflection.</span>
+      </h1>
+
+
+      <p class="hero-description">
+        Tell the Oracle a little about where you are now.
+        Your reflection is generated privately on your device.
+      </p>
+
+    </section>
+
+
+    <section class="oracle-panel">
+
+      <div class="panel-top">
+
+        <div class="panel-number">
+          01
+        </div>
+
+        <div>
+
+          <div class="panel-kicker">
+            YOUR ORACLE PROFILE
+          </div>
+
+          <h2>
+            Set your reflection
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="birthMonth">
+          Birth month
+        </label>
+
+        <div class="select-wrap">
+
+          <select id="birthMonth">
+
+            <option value="">
+              Choose a month
+            </option>
+
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+
+          </select>
+
+          <span class="select-arrow">
+            ⌄
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="focus">
+          What is your current focus?
+        </label>
+
+        <div class="select-wrap">
+
+          <select id="focus">
+
+            <option value="">
+              Choose your focus
+            </option>
+
+            <option value="Career">
+              Career
+            </option>
+
+            <option value="Relationships">
+              Relationships
+            </option>
+
+            <option value="Learning">
+              Learning
+            </option>
+
+            <option value="Creativity">
+              Creativity
+            </option>
+
+            <option value="Personal Growth">
+              Personal Growth
+            </option>
+
+          </select>
+
+          <span class="select-arrow">
+            ⌄
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="mood">
+          How are you feeling right now?
+        </label>
+
+        <div class="select-wrap">
+
+          <select id="mood">
+
+            <option value="">
+              Choose your mood
+            </option>
+
+            <option value="Calm">
+              Calm
+            </option>
+
+            <option value="Curious">
+              Curious
+            </option>
+
+            <option value="Stuck">
+              Stuck
+            </option>
+
+            <option value="Energized">
+              Energized
+            </option>
+
+            <option value="Uncertain">
+              Uncertain
+            </option>
+
+          </select>
+
+          <span class="select-arrow">
+            ⌄
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <button id="oracleButton">
+
+        <span class="button-text">
+          Reveal My Reflection
+        </span>
+
+        <span class="button-icon">
+          →
+        </span>
+
+      </button>
+
+
+      <div id="status" class="status"></div>
+
+    </section>
+
+
+    <section id="resultCard" class="result-card hidden">
+
+      <div class="result-glow"></div>
+
+
+      <div class="result-header">
+
+        <div>
+
+          <div class="result-kicker">
+            YOUR LOCAL AI REFLECTION
+          </div>
+
+          <h2 id="resultTitle"></h2>
+
+        </div>
+
+        <div class="result-symbol">
+          ✦
+        </div>
+
+      </div>
+
+
+      <div class="reading-divider">
+
+        <span></span>
+
+        <i>✦</i>
+
+        <span></span>
+
+      </div>
+
+
+      <div class="reading-section">
+
+        <div class="reading-label">
+          REFLECTION
+        </div>
+
+        <p id="resultReflection"></p>
+
+      </div>
+
+
+      <div class="reading-grid">
+
+        <div class="reading-box">
+
+          <div class="reading-box-icon">
+            ◈
+          </div>
+
+          <div class="reading-label">
+            THEME
+          </div>
+
+          <p id="resultTheme"></p>
+
+        </div>
+
+
+        <div class="reading-box">
+
+          <div class="reading-box-icon">
+            →
+          </div>
+
+          <div class="reading-label">
+            NEXT STEP
+          </div>
+
+          <p id="resultAction"></p>
+
+        </div>
+
+      </div>
+
+
+      <div class="question-box">
+
+        <div class="question-mark">
+          ?
+        </div>
+
+        <div>
+
+          <div class="intention-label">
+            REFLECTION QUESTION
+          </div>
+
+          <p id="resultQuestion"></p>
+
+        </div>
+
+      </div>
+
+
+      <div class="local-ai">
+
+        <span class="ai-pulse"></span>
+
+        <span>
+          Generated locally with
+          <strong>QVAC</strong>
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <section class="features">
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          ◈
+        </div>
+
+        <div>
+
+          <strong>
+            Private
+          </strong>
+
+          <span>
+            Your inputs stay on this device.
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          ✦
+        </div>
+
+        <div>
+
+          <strong>
+            Local AI
+          </strong>
+
+          <span>
+            Powered by QVAC inference.
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          ∞
+        </div>
+
+        <div>
+
+          <strong>
+            Reflective
+          </strong>
+
+          <span>
+            Guidance, not prediction.
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <footer>
+
+      <div class="footer-line"></div>
+
+      <p>
+        BirthMonth Oracle
+        <span>•</span>
+        Powered by Tether's QVAC SDK
+      </p>
+
+      <p class="footer-note">
+        Readings are creative reflections and are not
+        predictions or scientific assessments.
+      </p>
+
+    </footer>
+
+  </main>
+
+
+  <script src="/app.js"></script>
+
+</body>
+</html>
