@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "BirthMonth Oracle - a local AI birth month interpretation app powered by QVAC",
   "main": "index.js",
-  "scripts": {
-    "start": "node server.js",
-    "test:qvac": "node test-qvac.js",
-    "oracle": "node cli.js"
-  },
+ "scripts": {
+  "start": "node server.js",
+  "oracle": "node cli.js"
+},
   "keywords": [
     "qvac",
     "local-ai",
