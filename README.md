@@ -95,3 +95,7 @@ MIT License.
 ## QVAC Functions
 
 This app uses QVAC's `loadModel` to load the local AI model and `completion` to generate BirthMonth Oracle responses on-device.
+
+## Project Status
+
+BirthMonth Oracle is ready for local QVAC testing and use.
